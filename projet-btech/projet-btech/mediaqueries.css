@@ -1,0 +1,263 @@
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  /* index */
+  .header {
+    width: 100%;
+    padding: 0 10px;
+    justify-content: space-between;
+    position: relative;
+  }
+  header nav {
+    display: none;
+  }
+  .header h1 {
+    font-size: 50px;
+  }
+  .burger {
+    display: block;
+  }
+
+  .menu-button {
+    top: 0;
+    right: 20px;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 999;
+    position: relative;
+  }
+
+  .side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #121113;
+    color: #f7f7f2;
+    transition: all 0.3s ease-in-out;
+    padding-top: 60px;
+    z-index: 100;
+    border-left: 1px solid #f7f7f2;
+  }
+
+  .side-menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .side-menu li {
+    padding: 15px 20px;
+  }
+
+  .side-menu a {
+    color: white;
+    text-decoration: none;
+  }
+
+  #menu-toggle:checked + .menu-button + .side-menu {
+    right: 0;
+    display: block;
+  }
+
+  .intro-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro-section-text {
+    margin: 0;
+  }
+  .socials {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-last-project {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .copyright {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .copyright nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright a {
+    padding: 10px 0;
+  }
+  .footer-copyright {
+    padding: 5px 0;
+  }
+
+  /* news */
+  .big-title {
+    width: 100%;
+    font-size: 45px;
+  }
+  .sommaire {
+    text-align: center;
+  }
+  .sommaire h3 {
+    width: 100%;
+    padding: 0;
+    font-size: 35px;
+  }
+
+  .sommaire ul {
+    padding: 0 20px;
+  }
+
+  .film-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .film-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .film-poster {
+    width: 80%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .film-addon-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .film-presentation {
+    padding: 0;
+    width: 80%;
+    text-align: center;
+  }
+  .film-addon-container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .coms-card {
+    width: 80%;
+    margin: 0 20px;
+  }
+  iframe {
+    width: 100%;
+    margin: 30px 20px;
+  }
+  .footer-container-2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 30px;
+  }
+  .biography-content {
+    width: 100%;
+    padding: 0 20px;
+  }
+  /* biography */
+  .article-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .article-container img {
+    width: 100%;
+    height: auto;
+  }
+  .article-text {
+    padding: 0;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+  .header h1 {
+    font-size: 250px;
+  }
+  .header nav a {
+    font-size: 60px;
+  }
+  .header {
+    height: 300px;
+  }
+  body p {
+    font-size: 70px;
+  }
+  .intro-section-text h2 {
+    font-size: 140px;
+  }
+  .will-intro-img {
+    width: auto;
+    height: 900px;
+  }
+  .socials img {
+    width: 120px;
+  }
+  .footer-last-project h4 {
+    font-size: 100px;
+  }
+  .footer-last-project img {
+    width: 500px;
+  }
+  .fleche img {
+    width: 350px;
+  }
+  .copyright nav a {
+    font-size: 40px;
+  }
+  .copyright-link {
+    font-size: 40px;
+  }
+  .sommaire a {
+    font-size: 60px;
+  }
+  .film-presentation h3 {
+    font-size: 140px;
+  }
+  .film-presentation h4 {
+    font-size: 90px;
+  }
+  .film-presentation p {
+    font-size: 70px;
+  }
+  .like img {
+    width: 120px;
+  }
+  .film-addon-container {
+    justify-content: space-evenly;
+  }
+  .biography-content h4 {
+    font-size: 140px;
+  }
+  .biography-content p {
+    font-size: 50px;
+  }
+  .big-title {
+    font-size: 140px;
+  }
+  .article-text h3 {
+    font-size: 90px;
+  }
+  .article-text p {
+    font-size: 70px;
+  }
+  .article-container img {
+    height: 700px;
+    width: auto;
+  }
+}
