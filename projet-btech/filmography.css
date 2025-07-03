@@ -100,8 +100,9 @@
   padding: 15px;
   color: black;
 }
-input[type="checkbox"] {
+[id^="switch-"][type="checkbox"] {
   display: none;
+  cursor: pointer;
 }
 
 label {
@@ -118,14 +119,33 @@ label {
   text-align: end;
 }
 
-input[type="checkbox"]:checked + label .texte {
+[id^="switch-"][type="checkbox"]:checked + label .texte {
+  display: inline-block;
   filter: saturate(1);
+  animation-timing-function: ease;
+  animation-duration: 0.3s;
+  animation-name: like;
+}
+
+@keyframes like {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
 }
 .com-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
+}
+.com-content p {
+  font-size: 20px;
 }
 .user {
   display: flex;
